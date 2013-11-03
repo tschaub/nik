@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+var path = require('path');
+
+var log = require('npmlog');
+var optimist = require('optimist');
+
+var nik = require('../index');
+
+var name = path.basename(process.argv[1]);
+var usage =
+    'Create a new package based on an existing one.\n' +
+    'Usage: ' + name + ' [options] <pkg>\n\n' +
+    'The <pkg> argument takes the same form as `npm install <pkg>`.\n' +
+    'E.g. `' + name + ' foo` or `' + name + ' foo@1.2`.';
+
+var argv = optimist.usage(usage)
+    .demand(1)
+    .options({
+      l: {
+        alias: 'level',
+        describe: 'Log level ("silly", "verbose", "info", "warn", "error", ' +
+            '"silent")',
+        default: 'info'
+      },
+      s: {
+        alias: 'stack',
+        describe: 'Dispaly a stack trace on error',
+        boolean: true,
+        default: false
+      }
+    })
+    .argv;
+
+log.level = argv.l;
+var pkg = argv._[0];
+nik(pkg, process.cwd(), function(err) {
+  if (err) {
+    log.error('nik', argv.stack ? err : err.message);
+    process.exit(1);
+  }
+});

@@ -1,0 +1,36 @@
+{
+  "name": "nik",
+  "version": "0.0.0",
+  "description": "Create a new package based on an existing one",
+  "main": "index.js",
+  "bin": {
+    "nik": "bin/nik"
+  },
+  "preferGlobal": true,
+  "homepage": "https://github.com/tschaub/nik",
+  "author": {
+    "name": "Tim Schaub",
+    "url": "http://tschaub.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tschaub/nik.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tschaub/nik/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://tschaub.mit-license.org/"
+    }
+  ],
+  "dependencies": {
+    "async": "0.2.9",
+    "fs-extra": "0.8.1",
+    "promzard": "0.2.0",
+    "tmp": "0.0.21",
+    "npmlog": "0.0.6",
+    "optimist": "~0.6.0"
+  }
+}
