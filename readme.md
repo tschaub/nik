@@ -1,4 +1,4 @@
-# nik
+# `nik`
 **Create a new package based on an existing one**
 
 Nik (as in "nick") lets you quickly start a new project based on an existing Node package.  Host your project templates on [`npmjs.org`](http://npmjs.org/) and you can set up a new project in a snap:
@@ -46,4 +46,4 @@ The point of `nik` is not to use someone else's work without permission or prope
 
 ## Motivation
 
-The primary motivation of this project is to make it easy to start a new project with some existing scaffolding.  Think of it as [Yeoman](http://yeoman.io/)-extra-light.  The idea is that people can public reusable project scaffolding on [npmjs.org](http://npmjs.org/).
+The primary motivation of this project is to make it easy to start a new project with some existing scaffolding.  Think of it as [Yeoman](http://yeoman.io/)-extra-light.  The idea is that people can publish reusable project scaffolding on [npmjs.org](http://npmjs.org/).
