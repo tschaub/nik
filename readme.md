@@ -1,7 +1,7 @@
 # `nik`
 **Create a new package based on an existing one**
 
-Nik (as in "nick") lets you quickly start a new project based on an existing Node package.  Host your project templates on [`npmjs.org`](http://npmjs.org/) and you can set up a new project in a snap:
+Nik (as in "nick") lets you quickly start a new project based on an existing Node package.  Host your project templates on [npmjs.org](http://npmjs.org/) or [GitHub](https://github.com/) and you can set up a new project in a snap:
 
     nik my-project-template
 
@@ -25,7 +25,7 @@ The `nik` command takes a `<pkg>` argument in the same form as `npm install <pkg
 
 Install `nik` globally with the following:
 
-    npm install -g nik
+    npm install -g --production nik
 
 ## Use it
 
