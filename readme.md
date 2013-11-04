@@ -47,3 +47,7 @@ The point of `nik` is not to use someone else's work without permission or prope
 ## Motivation
 
 The primary motivation of this project is to make it easy to start a new project with some existing scaffolding.  Think of it as [Yeoman](http://yeoman.io/)-extra-light.  The idea is that people can publish reusable project scaffolding on [npmjs.org](http://npmjs.org/).
+
+Please [submit an issue](https://github.com/tschaub/nik/issues) if you encounter any trouble.  Contributions or suggestions for improvements welcome!
+
+[![Current Status](https://secure.travis-ci.org/tschaub/nik.png?branch=master)](https://travis-ci.org/tschaub/nik)
