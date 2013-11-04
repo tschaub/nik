@@ -1,6 +1,6 @@
 {
   "name": "nik",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create a new package based on an existing one",
   "main": "index.js",
   "bin": {
