@@ -25,7 +25,7 @@ The `nik` command takes a `<pkg>` argument in the same form as `npm install <pkg
 
 Install `nik` globally with the following:
 
-    npm install -g nik
+    npm install -g --production nik
 
 ## Use it
 
