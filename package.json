@@ -6,6 +6,9 @@
   "bin": {
     "nik": "bin/nik"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "preferGlobal": true,
   "homepage": "https://github.com/tschaub/nik",
   "author": {
@@ -32,5 +35,11 @@
     "tmp": "0.0.21",
     "npmlog": "0.0.6",
     "optimist": "~0.6.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "0.1.9",
+    "grunt": "0.4.1",
+    "grunt-newer": "0.5.4",
+    "grunt-contrib-jshint": "0.7.1"
   }
 }
