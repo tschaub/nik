@@ -5,11 +5,15 @@ Nik (as in "nick") lets you quickly start a new project based on an existing Nod
 
     nik my-project-template
 
-You can also start a new module based on someone else's work:
+If you want to start a project based on a specific release of a package, use the `nik <pkg>@<version>` syntax:
 
     nik some-other-cool-module@2.3.5
 
-The `nik` command takes a `<pkg>` argument in the same form as `npm install <pkg>`.  So you can supply it any of the following:
+The examples above use Node package names from the [`npm` registry](http://npmjs.org/).  You can also use `nik` to create a new project from any Node package on GitHub with `nik <github username>/<github project>`:
+
+    nik some-user/some-package
+
+With `nik`, you can bootstrap a project from a `npm` hosted package (with or without a version), a local package, a tarball URL, or any GitHub hosted Node package.  Any of the following forms will work:
 
     nik <pkg>
     nik <pkg>@<tag>
@@ -29,7 +33,7 @@ Install `nik` globally with the following:
 
 ## Use it
 
-Create a new directory for your package:
+Create a new directory for your new package:
 
     mkdir foo
 
@@ -46,7 +50,7 @@ The point of `nik` is not to use someone else's work without permission or prope
 
 ## Motivation
 
-The primary motivation of this project is to make it easy to start a new project with some existing scaffolding.  Think of it as [Yeoman](http://yeoman.io/)-extra-light.  The idea is that people can publish reusable project scaffolding on [npmjs.org](http://npmjs.org/).
+The primary motivation of `nik` is to make it easy to start a new project with some existing scaffolding.  Think of it as [Yeoman](http://yeoman.io/)-extra-light or `npm init` on steroids.  The idea is that people will host templates or project scaffolding on on [npmjs.org](http://npmjs.org/) or [GitHub](https://github.com/), and you can use `nik` to bootstrap your project.
 
 Please [submit an issue](https://github.com/tschaub/nik/issues) if you encounter any trouble.  Contributions or suggestions for improvements welcome!
 
