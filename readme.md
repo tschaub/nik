@@ -42,7 +42,7 @@ Now change into that directory, and `nik` a package to start with:
     cd foo
     nik bar
 
-You'll be prompted for a few questions (similar to `npm init`).  When you're done, you'll have a new module ready to be `npm install`ed, pushed up to GitHub, or published anywhere else.
+You'll be prompted for a few questions (similar to `npm init`).  When you're done, you'll have a new module ready to be pushed up to GitHub or published anywhere else.
 
 ## Credit where credit is due
 
