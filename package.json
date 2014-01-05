@@ -31,15 +31,15 @@
   "dependencies": {
     "async": "0.2.9",
     "fs-extra": "0.8.1",
-    "promzard": "0.2.0",
+    "promzard": "0.2.1",
     "tmp": "0.0.21",
     "npmlog": "0.0.6",
-    "optimist": "~0.6.0"
+    "optimist": "0.6.0"
   },
   "devDependencies": {
-    "grunt-cli": "0.1.9",
-    "grunt": "0.4.1",
-    "grunt-newer": "0.5.4",
-    "grunt-contrib-jshint": "0.7.1"
+    "grunt-cli": "0.1.11",
+    "grunt": "0.4.2",
+    "grunt-newer": "0.6.0",
+    "grunt-contrib-jshint": "0.8.0"
   }
 }
