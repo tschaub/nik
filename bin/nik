@@ -17,6 +17,12 @@ var usage =
 var argv = optimist.usage(usage)
     .demand(1)
     .options({
+      d: {
+        alias: 'directory',
+        describe: 'Output directory (must be empty, created if it does not ' +
+            'exist)',
+        default: '.'
+      },
       l: {
         alias: 'level',
         describe: 'Log level ("silly", "verbose", "info", "warn", "error", ' +
@@ -32,9 +38,9 @@ var argv = optimist.usage(usage)
     })
     .argv;
 
-log.level = argv.l;
-var pkg = argv._[0];
-nik(pkg, process.cwd(), function(err) {
+log.level = argv.level;
+
+nik(argv._[0], argv.directory, function(err) {
   if (err) {
     log.error('nik', argv.stack ? err : err.message);
     process.exit(1);
