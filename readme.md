@@ -1,6 +1,5 @@
 # `nik`
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/tschaub/nik.svg)](https://greenkeeper.io/)
 **Create a new package based on an existing one**
 
 Nik (as in "nick") lets you quickly start a new project based on an existing Node package.  Host your project templates on [npmjs.org](http://npmjs.org/) or [GitHub](https://github.com/) and you can set up a new project in a snap:
@@ -56,4 +55,4 @@ The primary motivation of `nik` is to make it easy to start a new project with s
 
 Please [submit an issue](https://github.com/tschaub/nik/issues) if you encounter any trouble.  Contributions or suggestions for improvements welcome!
 
-[![Current Status](https://secure.travis-ci.org/tschaub/nik.png?branch=master)](https://travis-ci.org/tschaub/nik)
+[![Build Status](https://travis-ci.org/tschaub/nik.svg?branch=master)](https://travis-ci.org/tschaub/nik)

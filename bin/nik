@@ -9,34 +9,37 @@ var nik = require('../index');
 
 var name = path.basename(process.argv[1]);
 var usage =
-    'Create a new package based on an existing one.\n' +
-    'Usage: ' + name + ' [options] <pkg>\n\n' +
-    'The <pkg> argument takes the same form as `npm install <pkg>`.\n' +
-    'E.g. `' + name + ' foo` or `' + name + ' foo@1.2`.';
+  'Create a new package based on an existing one.\n' +
+  'Usage: ' +
+  name +
+  ' [options] <pkg>\n\n' +
+  'The <pkg> argument takes the same form as `npm install <pkg>`.\n' +
+  'E.g. `' +
+  name +
+  ' foo` or `' +
+  name +
+  ' foo@1.2`.';
 
-var argv = optimist.usage(usage)
-    .demand(1)
-    .options({
-      d: {
-        alias: 'directory',
-        describe: 'Output directory (must be empty, created if it does not ' +
-            'exist)',
-        default: '.'
-      },
-      l: {
-        alias: 'level',
-        describe: 'Log level ("silly", "verbose", "info", "warn", "error", ' +
-            '"silent")',
-        default: 'info'
-      },
-      s: {
-        alias: 'stack',
-        describe: 'Dispaly a stack trace on error',
-        boolean: true,
-        default: false
-      }
-    })
-    .argv;
+var argv = optimist.usage(usage).demand(1).options({
+  d: {
+    alias: 'directory',
+    describe: 'Output directory (must be empty, created if it does not ' +
+      'exist)',
+    default: '.'
+  },
+  l: {
+    alias: 'level',
+    describe: 'Log level ("silly", "verbose", "info", "warn", "error", ' +
+      '"silent")',
+    default: 'info'
+  },
+  s: {
+    alias: 'stack',
+    describe: 'Dispaly a stack trace on error',
+    boolean: true,
+    default: false
+  }
+}).argv;
 
 log.level = argv.level;
 
