@@ -1,5 +1,3 @@
-
-
 /**
  * Nik a package.
  * @param {string} pkg The package name (same syntax as `npm install`).
