@@ -29,17 +29,17 @@
     }
   ],
   "dependencies": {
-    "async": "0.2.9",
-    "fs-extra": "0.8.1",
-    "promzard": "0.2.1",
-    "tmp": "0.0.21",
-    "npmlog": "0.0.6",
-    "optimist": "0.6.0"
+    "async": "2.1.4",
+    "fs-extra": "2.0.0",
+    "promzard": "0.3.0",
+    "tmp": "0.0.31",
+    "npmlog": "4.0.2",
+    "optimist": "0.6.1"
   },
   "devDependencies": {
-    "grunt-cli": "0.1.11",
-    "grunt": "0.4.2",
-    "grunt-newer": "0.6.0",
-    "grunt-contrib-jshint": "0.8.0"
+    "grunt-cli": "1.2.0",
+    "grunt": "1.0.1",
+    "grunt-newer": "1.2.0",
+    "grunt-contrib-jshint": "1.1.0"
   }
 }
