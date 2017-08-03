@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/tschaub/nik/issues"
   },
-  "licenses": "MIT",
+  "license": "MIT",
   "dependencies": {
     "async": "2.1.4",
     "fs-extra": "2.0.0",
