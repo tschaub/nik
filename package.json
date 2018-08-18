@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^4.3.0",
-    "eslint-config-tschaub": "^10.0.0"
+    "eslint-config-tschaub": "^12.0.1"
   },
   "eslintConfig": {
     "extends": "tschaub",
